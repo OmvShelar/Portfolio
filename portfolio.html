@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a9b8e4;
+        }
+        header, footer {
+            background-color: #383838;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        nav a {
+            color: rgb(255, 249, 249);
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        .section {
+            padding: 2rem;
+            text-align: center;
+        }
+        .section:nth-child(even) {
+            background-color: #e2e2e2;
+        }
+        .projects, .certificates {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .project, .certificate {
+            background-color: white;
+            border: 1px solid #0c0c0c;
+            margin: 1rem;
+            padding: 1rem;
+            width: calc(33% - 2rem);
+        }
+        @media (max-width: 768px) {
+            .project, .achievement {
+                width: calc(50% - 2rem);
+            }
+        }
+        @media (max-width: 480px) {
+            .project, .achievement {
+                width: calc(100% - 2rem);
+            }
+        }
+        a:hover{
+            font-size: x-large;
+            color: #f5c72f;
+        }
+        #about a:hover{
+            font-weight: bolder;
+            font-size: xx-large;
+            color: #e6510c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p><a  href=" ">Hello! I'm Om Shelar</a>, A Full-stack developer with a passion for creating efficient and innovative solutions. I have experience in C++, python, and web development. Welcome to my portfolio!</p>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Event Management Website</h3>
+                <p>Here i have Created a Event Management Website for our Own Bussiness in which we can find every detail About Events its Booking, Venues and we can also choose Our Desired Date and Events to Book it. </p>
+            </div>
+            <div class="project">
+                <h3>Object Detection In Python</h3>
+                <p>Here i have created a Object Detection Model In Python in Which We can easily detect the moving or present items within a Video, Image , I Have used OpenCv Along with CNN to Create it.</p>
+            </div>
+            <div class="project"> 
+                <h3>Zomato Clone</h3>
+                <p>Here i have Created a Zomato Clone Website </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="section">
+        <h2>Certificates</h2>
+        <div class="Certificates">
+            <div class="Certificate">
+                <h3>The Complete Web Development Bootcamp</h3>
+            </div>
+            <div class="Certificate">
+                <h3>The Complete Python Bootcamp</h3>
+            </div>
+            <div class="Certificate">
+                <h3>Google Data Analysis</h3>
+            </div>
+            <div class="Certificate">
+                <h3>Master Class Of Data Science</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <form>
+            <p><input type="text" placeholder="Your Name"></p>
+            <p><input type="email" placeholder="Your Email"></p>
+            <p><textarea placeholder="Your Message"></textarea></p>
+            <p><button type="submit">Send</button></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+</body>
+</html>
